@@ -1,0 +1,135 @@
+.primaryWrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+/* 🌐 Contenedor principal del navbar */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-background);
+}
+
+.nav > a {
+  padding-block: var(--spacing-xl);
+}
+
+/* 🔗 Logo */
+.logo {
+  flex-shrink: 0;
+}
+
+.logoImg {
+  width: 180px;
+  height: auto;
+}
+
+/* 📋 Lista principal del menú */
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-size-body-md);
+}
+
+/* 🧩 Ítem individual */
+.item {
+  position: relative;
+  transition: border-bottom 0.3s ease;
+}
+
+.item.active {
+  border-bottom: 2px solid var(--color-accent-primary);
+}
+
+/* 🧠 Enlaces o spans */
+.item > a,
+.item > span {
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-normal);
+  transition: color 0.3s ease;
+}
+
+/* 🟢 Estado hover o activo */
+.item:hover > a,
+.item:hover > span,
+.item.active > a,
+.item.active > span {
+  color: var(--color-accent-primary);
+}
+
+/* 🔽 Submenú desplegable */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--color-surface-primary);
+  box-shadow: var(--shadow-default);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  padding-block: var(--spacing-xs);
+  list-style: none;
+  z-index: 1000;
+  min-width: 14rem;
+}
+
+/* 🎯 Mostrar submenú en hover o focus */
+.item:hover .dropdown,
+.item:focus-within .dropdown {
+  display: block;
+}
+
+/* 🔗 Subitems del dropdown */
+.dropdown li {
+  padding: var(--spacing-xs) 0;
+  white-space: nowrap;
+}
+
+.dropdown li a {
+  display: block;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  color: var(--color-text-primary);
+}
+
+.dropdown li a:hover {
+  color: var(--color-accent-primary);
+}
+
+.dropdown li a.active {
+  color: var(--color-accent-primary);
+}
+
+/* 💠 Enlace destacado manual */
+.link a {
+  color: var(--color-accent-primary);
+  font-weight: var(--font-weight-bold);
+}
+
+/* 🔘 Enlace activo (directo) */
+a.active {
+  color: var(--color-accent-primary);
+}
+
+/* 🔽 Icono de flecha */
+.arrow {
+  display: inline-block;
+  transform: rotate(-90deg);
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+  margin-right: 20px;
+}
+
+/* ⬇️ Flecha activada */
+.item:hover .arrow,
+.item:focus-within .arrow,
+.item.active .arrow {
+  color: var(--color-accent-primary);
+  transform: rotate(90deg);
+}

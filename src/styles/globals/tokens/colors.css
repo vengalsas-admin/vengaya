@@ -1,0 +1,12 @@
+:root {
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #4a4a4a;
+  --color-background: #fafbfc;
+  --color-background-secondary: #e1eaeb;
+  --color-surface-primary: #ffffff;
+  --color-WhatsApp: #25d366;
+  --color-accent-primary: #0daead;
+  --color-accent-secondary: #1e9a80;
+  --color-error: #d32f2f;
+  --color-error-background: #fdecea;
+}

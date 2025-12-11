@@ -1,0 +1,49 @@
+/* 🧱 Contenedor principal */
+.wrapper {
+  background-color: var(--color-background-secondary);
+  width: 100%;
+  padding-block: var(--spacing-xl);
+  cursor: default;
+}
+
+/* 📦 Tarjeta de estadísticas */
+.container {
+  display: flex;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg) var(--spacing-xl);
+  border-radius: var(--border-radius);
+  justify-content: center;
+  text-align: center;
+  box-shadow: var(--shadow-default);
+  background-color: var(--color-background);
+  width: max-content;
+}
+
+/* 🔢 Ítem individual */
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 366px;
+}
+
+/* 🔠 Valor numérico principal */
+.item strong span {
+  font-size: 3.5rem; /* equivalente a 56px */
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  min-width: 12ch;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+/* 🏷️ Texto descriptivo */
+.item span {
+  font-size: var(--font-size-heading-sm); /* 1.25rem = 20px */
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}

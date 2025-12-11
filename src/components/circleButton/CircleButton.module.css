@@ -1,0 +1,23 @@
+.circleButton {
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  background-color: var(--color-accent-primary);
+  color: var(--color-surface-primary);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* 🧭 Estados interactivos */
+.circleButton:hover,
+.circleButton:focus,
+.circleButton:focus-visible {
+  background-color: var(--color-accent-secondary);
+  outline: none;
+}

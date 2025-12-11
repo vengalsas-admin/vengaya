@@ -1,0 +1,52 @@
+/* 📦 Contenedor de botones */
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+/* 🧱 Estilos base para botones */
+.btnPrimary,
+.btnSecondary {
+  width: 13.75rem;
+  height: 3.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  text-align: center;
+  font-weight: 500;
+  font-size: var(--font-size-body-md);
+  transition: background-color 0.25s ease;
+  cursor: pointer;
+}
+
+/* 🔵 Botón primario */
+.btnPrimary {
+  background-color: var(--color-accent-primary);
+  color: var(--color-surface-primary);
+  border: none;
+}
+
+.btnPrimary:hover,
+.btnPrimary:focus,
+.btnPrimary:focus-visible {
+  background-color: var(--color-accent-secondary);
+  outline: none;
+}
+
+/* ⚪ Botón secundario */
+.btnSecondary {
+  background-color: transparent;
+  color: var(--color-accent-primary);
+  border: 0.125rem solid var(--color-accent-primary);
+}
+
+.btnSecondary:hover,
+.btnSecondary:focus,
+.btnSecondary:focus-visible {
+  background-color: color-mix(in srgb, var(--color-accent-primary) 10%, transparent);
+  outline: none;
+}

@@ -1,0 +1,15 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text-primary: #f5f5f5;
+    --color-text-secondary: #cccccc;
+    --color-background: #121212;
+    --color-surface-primary: #1e1e1e;
+    --color-background-secondary: #2a2a2a;
+    --color-accent-primary: #12dad2;
+    --color-accent-secondary: #85d672;
+    --color-error: #ff6a6a;
+    --color-error-background: #2d0000;
+    --shadow-default: 0 2px 4px #00000066;
+    --shadow-elevated: 0 4px 12px #00000099;
+  }
+}

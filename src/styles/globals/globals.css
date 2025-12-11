@@ -1,0 +1,17 @@
+@import './tokens/colors.css';
+@import './tokens/typography.css';
+@import './tokens/shadows.css';
+@import './tokens/spacing.css';
+@import './tokens/layout.css';
+@import './tokens/borders.css';
+
+@import './base/reset.css';
+@import './base/elements.css';
+@import './base/dark-mode.css';
+
+.container {
+  max-width: var(--container-max-width);
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: var(--padding-horizontal);
+}

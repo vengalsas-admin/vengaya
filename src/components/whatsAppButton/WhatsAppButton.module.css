@@ -1,0 +1,55 @@
+/* 🟢 Botón flotante de WhatsApp */
+.button {
+  position: fixed;
+  bottom: var(--spacing-md);
+  right: var(--spacing-md);
+  background-color: var(--color-WhatsApp);
+  color: var(--color-surface-primary);
+
+  padding: var(--spacing-md);
+  border-radius: 62.5rem; /* Extra redondo */
+  box-shadow: var(--shadow-elevated);
+
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: var(--font-size-body-xs);
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+
+  z-index: 9999;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  padding-right: var(--spacing-md);
+}
+
+/* ➕ Icono de WhatsApp */
+.icon {
+  font-size: var(--font-size-heading-xl);
+  margin-right: 0;
+  transition: margin 0.3s ease;
+}
+
+.button:hover .icon {
+  margin-right: var(--spacing-xs);
+}
+
+/* 🏷️ Texto que aparece al hacer hover */
+.label {
+  display: none;
+  transition: opacity 0.3s ease;
+  font-size: var(--font-size-body-md);
+}
+
+.button:hover .label {
+  display: inline;
+  margin-left: var(--spacing-xs);
+}
+
+/* 🔘 Estado inactivo */
+.inactive {
+  opacity: 0.5;
+}

@@ -1,0 +1,4 @@
+:root {
+  --container-max-width: clamp(98.75rem, 90vw, 120rem);
+  --padding-horizontal: 10px;
+}

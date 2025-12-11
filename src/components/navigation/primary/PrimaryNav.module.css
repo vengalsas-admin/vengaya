@@ -1,0 +1,67 @@
+/* 🧭 Encabezado principal */
+.header {
+  background-color: var(--color-background-secondary);
+  min-height: clamp(4.5rem, 6vw, 5rem); /* 72px a 80px */
+  width: 100%;
+}
+
+/* 📦 Contenedor de navegación */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--container-max-width);
+  margin-inline: auto;
+}
+
+/* 📋 Lista de navegación */
+.list {
+  display: flex;
+  align-items: center;
+  height: clamp(4.5rem, 6vw, 5rem);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 🔗 Ítems de navegación */
+.item {
+  width: clamp(9rem, 12vw, 11.875rem); /* 144px - 190px */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item a {
+  width: 100%;
+  height: 100%;
+  padding: var(--spacing-xs);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-text-primary);
+  text-decoration: none;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* 🔁 Hover / Focus */
+.item a:hover,
+.item a:focus-visible {
+  background-color: var(--color-accent-primary);
+  color: var(--color-surface-primary);
+  outline: none;
+}
+
+/* ✅ Activo */
+.active {
+  background-color: var(--color-accent-primary);
+}
+
+.active a {
+  color: var(--color-surface-primary);
+}

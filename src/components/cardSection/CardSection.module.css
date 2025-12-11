@@ -1,0 +1,82 @@
+/* 📌 Sección general */
+.section {
+  padding: var(--spacing-xl) var(--padding-horizontal);
+  background-color: var(--color-background);
+  text-align: center;
+}
+
+/* 🧠 Encabezados */
+.header h1 {
+  font-size: clamp(1.75rem, 5vw, var(--font-size-heading-xl));
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-sm);
+}
+
+.header h2 {
+  font-size: var(--font-size-body-md);
+  color: var(--color-text-secondary);
+  margin-block: var(--spacing-xl);
+}
+
+.highlight {
+  color: var(--color-accent-primary);
+}
+
+/* 🃏 Contenedor de tarjetas */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-md);
+  padding-block: var(--spacing-lg);
+}
+
+/* 🧱 Tarjeta individual */
+.card {
+  position: relative;
+  width: 260px;
+  max-width: 100%;
+  padding-top: calc(var(--spacing-lg) * 2 + 1.25rem);
+  padding-inline: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+  background-color: var(--color-surface-primary);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-default);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+/* 🔵 Ícono centrado en top */
+.icon {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.5rem;
+  background-color: var(--color-accent-primary);
+  color: var(--color-surface-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-default);
+}
+
+/* 📝 Contenido de la tarjeta */
+.card h3 {
+  font-size: var(--font-size-heading-sm);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-xs);
+}
+
+.card p {
+  font-size: var(--font-size-body-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  margin-bottom: var(--spacing-xs);
+}

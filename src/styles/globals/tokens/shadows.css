@@ -1,0 +1,4 @@
+:root {
+  --shadow-default: 0 2px 4px #0000001a;
+  --shadow-elevated: 0 4px 12px #00000040;
+}
