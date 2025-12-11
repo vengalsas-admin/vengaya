@@ -7,6 +7,7 @@ import SolutionsSection from '@/components/solutionsSection/SolutionsSection';
 import StatsCard from '@/components/animatedCounter/StatsCard';
 import Testimonials from '@/components/testimonials/Testimonials';
 import NewsletterSignup from '@/components/newsletterSignup/NewsletterSignup';
+import { JSX } from 'react';
 
 export const metadata: Metadata = {
   title: 'Inicio | VengaYa',
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function HomePage(): JSX.Element {
   return (
-    <main id="main-content" role="main" tabIndex={-1}>
+    <main id='main-content' role='main' tabIndex={-1}>
       <SecondaryNav />
       <Carousel />
       <CardSection />
